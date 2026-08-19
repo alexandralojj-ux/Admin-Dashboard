@@ -1,10 +1,196 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 svg {
     width: 24px;
     height: 24px;
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.side-bar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #8FA28A ;
+}
+
+.logo {
+    margin: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* header */
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 30px;
+    background-color: #C7D3C0;
+}
+
+.first-row,
+.second-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search input{
+    width: min(500px, 40vw);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #F7F4ED;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+
+}
+
+button {
+    background-color: #8FA28A;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 8px 20px;
+
+}
+
+/* main content */
+
+.main-content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #F7F4ED;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding: 25px 40px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note {
+    background-color: #C7D3C0;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 10px solid #C8A96B;
+}
+
+.note h4 {
+    margin-bottom: 10px;
+}
+
+.note p {
+    line-height: 1.5;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.announcements,
+.trending {
+    background-color: #C7D3C0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.news:last-child {
+    border-bottom: none;
+}
+
+.trending .profile {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.trending .profile:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
